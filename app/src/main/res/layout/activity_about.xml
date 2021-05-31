@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_about"
+        android:layout_width="450dp"
+        android:layout_height="450dp"
+        android:src="@drawable/about_image"/>
+        <TableRow >
+            <TextView
+                android:text="@string/nama"
+                android:textSize="15sp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_height="match_parent"
+                android:text="@string/name_about"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+        </TableRow>
+        <TableRow >
+            <TextView
+                android:text="@string/email"
+                android:textSize="15sp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_height="match_parent"
+                android:text="@string/about_email"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+        </TableRow>
+    </TableLayout>
+    </ScrollView>
+</RelativeLayout>
